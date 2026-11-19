@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesubia - Test Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="scanner-page">
+
+        <h1>Vesubia Card Scanner</h1>
+        <p>Place ta carte dans le cadre pour la scanner.</p>
+
+        <button id="open-camera-button">
+            📷 Ouvrir la caméra
+        </button>
+
+        <div id="camera-panel" hidden>
+
+            <div class="camera-container">
+
+                <video
+                    id="camera-video"
+                    autoplay
+                    playsinline
+                    muted>
+                </video>
+
+                <div class="camera-guide"></div>
+
+            </div>
+
+            <div class="camera-actions">
+
+                <button id="capture-card-button">
+                    📸 Capturer la carte
+                </button>
+
+                <button id="close-camera-button">
+                    Fermer la caméra
+                </button>
+
+            </div>
+
+        </div>
+
+        <canvas id="camera-canvas" hidden></canvas>
+
+        <div id="photo-result">
+            <h2>Photo capturée</h2>
+            <img id="captured-image" alt="Carte capturée">
+        </div>
+
+    </main>
+
+    <script src="camera-scanner.js"></script>
+
+</body>
+</html>
+```

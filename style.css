@@ -1,0 +1,113 @@
+/* ==========================================
+   VESUBIA - TEST CAMERA
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+.scanner-page {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #bbb;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #e8e8e8;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: white;
+}
+
+#open-camera-button {
+    margin-bottom: 20px;
+}
+
+.camera-container {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    background: #000;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#camera-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #000;
+    object-fit: contain;
+}
+
+.camera-guide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    aspect-ratio: 2.5 / 3.5;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    border-radius: 12px;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+}
+
+.camera-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+#close-camera-button {
+    background: #333;
+    color: white;
+}
+
+#camera-panel[hidden] {
+    display: none !important;
+}
+
+#photo-result {
+    display: none;
+    margin-top: 30px;
+}
+
+#captured-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin:  
+}
